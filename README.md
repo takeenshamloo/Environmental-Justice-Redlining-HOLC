@@ -1,5 +1,9 @@
 # Environmental Justice Analysis of HOLC Redlining in Los Angeles
 
+## Author
+- **Takeen Shamloo**  
+  GitHub: [@takeenshamloo](https://github.com/takeenshamloo)
+
 ## Overview
 This repository contains analyses for exploring the legacy of redlining in 
 Los Angeles, focusing on its impacts on present day environmental justice and 
@@ -82,11 +86,6 @@ This project showcases the following skills:
 - Integration of multiple data sources with different coordinate reference systems.
 - Reproducible workflows using Quarto.
 - Application of environmental justice concepts to spatial data science.
-
----
-
-## Author
-- **Takeen Shamloo** – Developer and analyst for this repository.
 
 ---
 
