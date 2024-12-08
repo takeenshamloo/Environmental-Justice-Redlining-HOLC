@@ -5,3 +5,5 @@ data/
 .Rhistory
 .RData
 .Ruserdata
+
+/.quarto/
