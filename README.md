@@ -20,6 +20,7 @@ This repository highlights my ability to:
 ## Contents
 The repository is organized as follows:
 
+```{plaintext}
 Environmental-Justice-Redlining-HOLC
 ├── output
 │   ├── Environmental_Justice_files/
@@ -29,6 +30,7 @@ Environmental-Justice-Redlining-HOLC
 ├── .gitignore
 ├── README.md
 ├── Environmental-Justice-Redlining-HOLC.Rproj
+```
 
 The `data/` folder is not included in this repository but contained:
 - `ejscreen/` (Environmental Justice Screening data from the US EPA)
