@@ -6,4 +6,6 @@ data/
 .RData
 .Ruserdata
 
+# Need to ignore these hidden files as they were created when I rendered.
 /.quarto/
+docs/.quarto/ 
