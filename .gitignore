@@ -9,3 +9,5 @@ data/
 # Need to ignore these hidden files as they were created when I rendered.
 /.quarto/
 docs/.quarto/ 
+.DS_Store
+output/Environmental_Justice_files/.DS_Store
