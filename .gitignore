@@ -1,0 +1,7 @@
+# Remove data folder
+data/
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
