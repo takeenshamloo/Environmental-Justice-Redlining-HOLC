@@ -4,6 +4,8 @@ author: "Takeen Shamloo"
 date: last-modified
 execute: 
   eval: true
+  warning: false
+  message: false
 format:
   html:
     toc: true
@@ -133,6 +135,11 @@ summarized_holc_data <- holc_data %>%
 
 # Create a table to output data summary 
 summarized_holc_data %>%
+  rename(
+    "HOLC Grade" = grade,
+    "Count" = count,
+    "Percentage" = percent
+  ) %>%
   kable(format = "html", caption = "HOLC Grade count and percentages") %>% 
   kable_styling("striped", full_width = F)
 ```
@@ -156,12 +163,18 @@ summary_stats <- joined_data %>%
 
 # Display table of summary statistics
 summary_stats %>%
+  rename(
+    "HOLC Grade" = grade,
+    "Mean % Low Income" = mean_low_income,
+    "Mean PM2.5 Percentile" = mean_pm25_percentile,
+    "Mean Life Expectancy Percentile" = mean_life_expectancy_percentile
+  ) %>%
   kable(format = "html", caption = "Mean Environmental Justice Metrics by HOLC Grade") %>%
   kable_styling("striped", full_width = F)
 ```
 
 #### Plot Mean % Low Income by HOLC Grade
-#| eval: true
+
 ```{r}
 mean_income_plot <- ggplot(summary_stats, aes(x = grade, y = mean_low_income, fill = grade)) +
   geom_bar(stat = "identity") +
@@ -174,6 +187,7 @@ mean_income_plot <- ggplot(summary_stats, aes(x = grade, y = mean_low_income, fi
 ```
 
 #### Plot Mean PM2.5 Percentile by HOLC Grade
+
 ```{r}
 ggplot(summary_stats, aes(x = grade, y = mean_pm25_percentile, fill = grade)) +
   geom_bar(stat = "identity") +
@@ -186,7 +200,7 @@ ggplot(summary_stats, aes(x = grade, y = mean_pm25_percentile, fill = grade)) +
 ```
 
 #### Plot Mean Life Expectancy Percentile by HOLC Grade
-#| eval: true
+
 ```{r}
 ggplot(summary_stats, aes(x = grade, y = mean_life_expectancy_percentile, fill = grade)) +
   geom_bar(stat = "identity") +
@@ -224,6 +238,11 @@ bird_summary <- bird_observations %>%
 
 # Display table of bird observation percentages by HOLC grade
 bird_summary %>%
+  rename(
+    "HOLC Grade" = grade,
+    "Observation Count" = observation_count,
+    "Percent of Observations" = percent_observations
+  ) %>%
   kable(format = "html", caption = "Percent of Bird Observations by HOLC Grade") %>%
   kable_styling("striped", full_width = F)
 ```
