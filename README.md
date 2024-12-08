@@ -22,10 +22,10 @@ The repository is organized as follows:
 
 Environmental-Justice-Redlining-HOLC
 ├── output
-|   ├── Environmental_Justice_files/...
-|   ├── Environmental_Justice.html 
+│   ├── Environmental_Justice_files/
+│   ├── Environmental_Justice.html
 ├── docs
-|   ├── Environmental_Justice.qmd
+│   ├── Environmental_Justice.qmd
 ├── .gitignore
 ├── README.md
 ├── Environmental-Justice-Redlining-HOLC.Rproj
