@@ -21,9 +21,15 @@ This repository highlights my ability to:
 The repository is organized as follows:
 
 Environmental-Justice-Redlining-HOLC/
-│   README.md         # This file
-│   Environmental_Justice.qmd           # Quarto document for the analysis
-│   Environmental_Justice.html          # Rendered Quarto output
+- docs/
+  - Environmental_Justice.qmd
+- output/
+  - Environmental_Justice.html 
+  - Environmental_Justice_files/...
+- .gitignore
+- Environmental-Justice-Redlining-HOLC.Rproj
+- README.md 
+
 
 The `data/` folder is not included in this repository but contained:
 - `ejscreen/` (Environmental Justice Screening data from the US EPA)
